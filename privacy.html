@@ -1,25 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <title>Privacy Policy · The Hidden Nation Awakens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="assets/logo-square.png" />
+  <style>
+    :root {
+      --gold: #e2c06d;
+      --gold-deep: #c79b3c;
+      --dark: #1a140d;
+      --bg: #120e09;
+      --text: #f5e7c6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #3a2915 0, #120e09 45%, #090604 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-deep); }
+
+    header {
+      border-bottom: 1px solid rgba(226,192,109,0.25);
+      background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      object-fit: cover;
+      box-shadow: 0 0 0 1px rgba(226,192,109,0.4);
+    }
+
+    .brand span {
+      font-size: 0.86rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.84rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3.5rem;
+    }
+
+    h1 {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: rgba(245,231,198,0.85);
+      margin-bottom: 1.75rem;
+    }
+
+    section {
+      margin-bottom: 1.9rem;
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid rgba(226,192,109,0.18);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.8rem;
+      color: var(--gold);
+    }
+
+    p { font-size: 0.95rem; margin-bottom: 0.6rem; }
+
+    ul {
+      margin-left: 1.25rem;
+      margin-top: 0.35rem;
+      font-size: 0.95rem;
+    }
+
+    li + li { margin-top: 0.25rem; }
+
+    .meta {
+      font-size: 0.8rem;
+      color: rgba(245,231,198,0.75);
+      margin-bottom: 0.75rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(226,192,109,0.25);
+      background: #090705;
+      padding: 1rem 1.25rem 1.5rem;
+      font-size: 0.78rem;
+      color: rgba(245,231,198,0.8);
+    }
+
+    .footer-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 700px) {
+      .nav { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>This Privacy Policy explains how The Hidden Nation handles information.</p>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-square.png" alt="The Hidden Nation Awakens logo" />
+        <span>The Hidden Nation Awakens</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>1. Data Collection</h2>
-  <p>This site does not collect personal data from users.</p>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">
+      This Privacy Policy explains how information is handled in connection with
+      The Hidden Nation Awakens website and social media content.
+    </p>
+    <p class="meta">Last updated: <strong>December 2025</strong></p>
 
-  <h2>2. Cookies</h2>
-  <p>No cookies or tracking mechanisms are used.</p>
+    <section>
+      <h2>1. Who we are</h2>
+      <p>
+        “The Hidden Nation Awakens” is an educational media project that produces documentary-style
+        video content and related materials about history, lineage, and culture. Online properties
+        may include this website, TikTok, YouTube, and other social platforms.
+      </p>
+      <p>
+        For questions about this policy, you can contact:
+        <a href="mailto:royaltproductions@gmail.com">royaltproductions@gmail.com</a>.
+      </p>
+    </section>
 
-  <h2>3. External Services</h2>
-  <p>Video uploads via TikTok API require authentication but do not log personal data here.</p>
+    <section>
+      <h2>2. Information we collect</h2>
+      <p>
+        This project is content-focused and does not intentionally collect sensitive personal data.
+        However, the following information may be collected or received:
+      </p>
+      <ul>
+        <li><strong>Basic technical data</strong> such as IP address, browser type, device type, and pages viewed, collected automatically by hosting providers or analytics tools.</li>
+        <li><strong>Interaction data</strong> such as likes, follows, comments, or messages on TikTok, YouTube, or other platforms, according to those platforms’ own policies.</li>
+        <li><strong>Voluntary information</strong> that you send by email or contact forms, such as your name, email address, or questions.</li>
+      </ul>
+      <p>
+        We do not knowingly collect information from children under 13 years of age. If you believe
+        a child has provided personal data, please contact us so it can be removed.
+      </p>
+    </section>
 
-  <h2>4. Contact</h2>
-  <p>For any concerns, email RoyalTProductions@gmail.com.</p>
+    <section>
+      <h2>3. How information is used</h2>
+      <p>
+        Any information we receive is used for limited, legitimate purposes, such as:
+      </p>
+      <ul>
+        <li>Responding to questions, feedback, or collaboration requests</li>
+        <li>Understanding general audience trends and improving content</li>
+        <li>Protecting the security and integrity of our accounts and services</li>
+        <li>Complying with legal obligations or responding to lawful requests</li>
+      </ul>
+      <p>
+        We do not sell personal data or use it for targeted advertising beyond what is provided by
+        the social platforms themselves.
+      </p>
+    </section>
 
-  <p><a href="index.html">Back to Home</a></p>
+    <section>
+      <h2>4. Cookies & third-party services</h2>
+      <p>
+        This website and our content may use cookies, pixels, or similar technologies through
+        third-party providers (such as hosting, analytics, or embedded video players). These tools
+        help measure traffic, performance, and engagement.
+      </p>
+      <p>
+        TikTok, YouTube, and other platforms are operated by third parties with their own privacy
+        policies. Your use of those services is governed by their terms, and any data they collect
+        is subject to their policies, not ours.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. How information is shared</h2>
+      <p>
+        We generally do not share personal information except:
+      </p>
+      <ul>
+        <li>With service providers such as hosting, email, or analytics platforms that help operate the project</li>
+        <li>When required by law, court order, or to respond to legal process</li>
+        <li>To protect our rights, security, or the safety of others</li>
+        <li>In connection with a reorganization or transfer of this project’s digital assets</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Data retention & security</h2>
+      <p>
+        Information is kept only as long as reasonably necessary for the purposes described in this
+        policy or as required by law. We use reasonable technical and organizational measures to
+        protect data; however, no online system is completely secure, and we cannot guarantee
+        absolute security.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Your rights & choices</h2>
+      <p>
+        Depending on your location, you may have rights under data-protection laws, such as the
+        ability to:
+      </p>
+      <ul>
+        <li>Request access to personal data we may hold about you</li>
+        <li>Request correction or deletion of your information</li>
+        <li>Object to or restrict certain types of processing</li>
+        <li>Withdraw consent where processing is based on consent</li>
+      </ul>
+      <p>
+        To exercise these rights, contact
+        <a href="mailto:royaltproductions@gmail.com">royaltproductions@gmail.com</a>. We may need to
+        verify your identity before acting on a request.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. International audiences</h2>
+      <p>
+        Content may be viewed from locations around the world. By accessing the website or social
+        channels, you understand that information may be processed in the United States or other
+        jurisdictions that may have different data-protection laws than your home country.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Changes to this policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time to reflect changes in content,
+        technology, or legal requirements. The “Last updated” date at the top of this page indicates
+        the most recent revision. Continued use of the website or content after changes become
+        effective means you accept the updated policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <p>
+        For questions or concerns about this Privacy Policy, you can reach us at:
+        <a href="mailto:royaltproductions@gmail.com">royaltproductions@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> The Hidden Nation Awakens. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <span>·</span>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
