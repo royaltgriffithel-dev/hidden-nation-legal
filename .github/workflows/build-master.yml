@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - 'MSTA 43/*.txt'
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
