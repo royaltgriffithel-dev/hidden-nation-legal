@@ -1,5 +1,8 @@
 name: Build MASTER.txt
 
+permissions:
+   contents: write
+
 on:
   push:
     paths:
