@@ -1,0 +1,35 @@
+name: Build MASTER.txt
+
+on:
+  push:
+    paths:
+      - 'MSTA 43/*.txt'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build MASTER.txt
+        run: |
+          rm -f "MSTA 43/MASTER.txt"
+
+          for f in "MSTA 43"/*.txt; do
+            if [ "$(basename "$f")" != "MASTER.txt" ]; then
+              echo "===== $(basename "$f") =====" >> "MSTA 43/MASTER.txt"
+              echo "" >> "MSTA 43/MASTER.txt"
+              cat "$f" >> "MSTA 43/MASTER.txt"
+              echo -e "\n\n" >> "MSTA 43/MASTER.txt"
+            fi
+          done
+
+      - name: Commit MASTER.txt
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add "MSTA 43/MASTER.txt"
+          git commit -m "Auto-build MASTER.txt" || echo "No changes to commit"
+          git push
